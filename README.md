@@ -16,7 +16,7 @@ python -m unittest discover -s tests -v
 - 英文论文：topo_dit.md；排版稿：output/pdf/topo_dit_revised.pdf（根目录 topo_dit.pdf 同步）
 - 微型配置：configs/topodit_cpu.yaml
 - 较大架构示例：configs/topodit_v1_k256.yaml；文件名保留历史标识，内容已升级为 v2.
-- 改动前论文、代码和配置：archive/v0_2026-09-25/
+
 
 
 ## 数据契约
