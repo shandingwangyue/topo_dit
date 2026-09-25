@@ -1,0 +1,19 @@
+# Only for small synthetic correctness checks. No video quality claim.
+model:
+  dim: 24
+  cond_dim: 8
+  num_elements: 4
+  depth: 2
+  num_heads: 4
+  latent_channels: 4
+  sinkhorn_iters: 30
+  epsilon: 0.2
+  routing: sinkhorn
+data:
+  meta_path: data/latents.jsonl
+  batch_size: 1
+  num_workers: 0
+  conditioning: unconditional
+  codec_id: synthetic-test-only
+training:
+  max_epochs: 1

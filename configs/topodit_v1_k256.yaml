@@ -1,0 +1,28 @@
+# v2 schema; architecture size for external hardware, not a local training recommendation.
+model:
+  dim: 1024
+  cond_dim: 512
+  num_elements: 256
+  depth: 24
+  num_heads: 16
+  latent_channels: 16
+  sinkhorn_iters: 30
+  epsilon: 0.2
+  routing: sinkhorn
+data:
+  meta_path: data/latents.jsonl
+  batch_size: 1
+  num_workers: 0
+  conditioning: unconditional
+  latent_scale: 1.0
+  codec_id: cosmos-continuous-REPLACE-WITH-EXACT-CHECKPOINT
+  condition_id: none
+training:
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  max_epochs: 10
+  lambda_ent: 0.0
+  lambda_ortho: 0.0
+  mask_ratio: 0.5
+  grad_clip: 1.0
+  seed: 42
